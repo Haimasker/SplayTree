@@ -168,5 +168,4 @@ protected:
 };
 
 void main() {
-
 }
