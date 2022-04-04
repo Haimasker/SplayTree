@@ -165,8 +165,16 @@ protected:
         delete(vertex);
         return (merged);
     }
+    
+public:
+    SplayTree() {
+        root = nullptr;
+    }
+
+    virtual ~SplayTree() {
+        delete(root);
+    }
 };
 
 void main() {
-
 }
