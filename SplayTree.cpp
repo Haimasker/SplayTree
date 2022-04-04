@@ -10,28 +10,28 @@ private:
         SplayTreeNode* parent;
         T               data;
 
-        Node(T data = T()) {
+        SplayTreeNode(T data = T()) {
             this->left(nullptr);
             this->right(nullptr);
             this->parent(nullptr);
             this->data(data);
         }
 
-        Node(SplayTreeNode* node) {
+        SplayTreeNode(SplayTreeNode* node) {
             this->left(node->left);
             this->right(node->right);
             this->parent(node->parent);
             this->data(node->data);
         }
 
-        Node(SplayTreeNode* left, SplayTreeNode* right, T data) {
+        SplayTreeNode(SplayTreeNode* left, SplayTreeNode* right, T data) {
             this->left(left);
             this->right(right);
             this->parent(nullptr);
             this->data(data);
         }
 
-        ~Node() {
+        ~SplayTreeNode() {
             delete left;
             delete right;
         }
@@ -86,8 +86,8 @@ protected:
             return (vertex);
         }
 
-        if ((grandparent->left == parent && parent->left == v) ||
-            (grandparent->right == parent && parent->right == v)) {
+        if ((grandparent->left == parent && parent->left == vertex) ||
+            (grandparent->right == parent && parent->right == vertex)) {
             rotate(parent, grandparent);
             rotate(vertex, parent);
         }
@@ -147,7 +147,7 @@ protected:
         if (treeRoot == nullptr)
             return (root);
         if (root == nullptr)
-            return (TreeRoot);
+            return (treeRoot);
         SplayTreeNode* right = find(root, treeRoot);
         right->left = treeRoot;
         treeRoot->parent = right;
