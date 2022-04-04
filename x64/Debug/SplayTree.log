@@ -1,3 +1,0 @@
-﻿  SplayTree.cpp
-C:\Users\vtkmy\Desktop\Projects for git\SplayTree\SplayTree.cpp(170,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  SplayTree.vcxproj -> C:\Users\vtkmy\Desktop\Projects for git\SplayTree\x64\Debug\SplayTree.exe
