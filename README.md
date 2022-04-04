@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-	this is the implementation of splay tree - self-balancing binary search tree.
+	This is the implementation of splay tree - self-balancing binary search tree.
 </p>
 
 <p align="center">
@@ -56,8 +56,7 @@ The purpose of this project is to implement SplayTree class and it's basic opera
   ![zig-zag](https://github.com/Haimasker/SplayTree/blob/master/images/zig-zag.png)
   
 * find(vertex, x) - trying to find node with value `x` beginning from given node `vertex` (as in simple BST). <br>
-Then runs `splay` of it's result. If there is no node with value `x` in the tree then runs `splay` from node with closest value to `x` <br>
-(leaf-node that was last during find process)
+Then runs `splay` of it's result. If there is no node with value `x` in the tree then runs `splay` from node with closest value to `x` (leaf-node that was last during find process)
 
 * split(vertex x) - splits given by pointer `vertex` tree into two: in first all values are less than `x`, in second one all values are bigger or equal
 
