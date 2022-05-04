@@ -58,7 +58,7 @@ The purpose of this project is to implement SplayTree class and it's basic opera
 * find(vertex, x) - trying to find node with value `x` beginning from given node `vertex` (as in simple BST). <br>
 Then runs `splay` of it's result. If there is no node with value `x` in the tree then runs `splay` from node with closest value to `x` (leaf-node that was last during find process)
 
-* split(vertex x) - splits given by pointer `vertex` tree into two: in first all values are less than `x`, in second one all values are bigger or equal
+* split(vertex, x) - splits given by pointer `vertex` tree into two: in first all values are less than `x`, in second one all values are bigger or equal
 
 * insert(vertex, x) - splits given by pointer `vertex` tree by value `x`. Then first subtree becomes left child and second subtree becomes right child of new node
 
